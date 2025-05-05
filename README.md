@@ -11,17 +11,16 @@ A proof-of-concept solar tracker that automatically orients a photovoltaic panel
 3. [Hardware Components](#hardware-components)  
 4. [Software & Firmware](#software--firmware)  
 5. [CAD & 3D Prints](#cad--3d-prints)  
-6. [Repository Structure](#repository-structure)  
-7. [Getting Started](#getting-started)  
-8. [Usage](#usage)  
-9. [Results & Performance](#results--performance)  
-10. [Future Improvements](#future-improvements)  
-11. [References](#references)  
-12. [License](#license)  
+6. [Getting Started](#getting-started)  
+7. [Usage](#usage)  
+8. [Results & Performance](#results--performance)  
+9. [Future Improvements](#future-improvements)  
+10. [References](#references)  
+11. [License](#license)  
 
 ---
 
-## 🧐 Project Overview
+## Project Overview
 
 This project implements a compact, dual-axis solar tracker that:
 
@@ -34,7 +33,7 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Dual-Axis Control**: Independent azimuth & elevation tracking.  
 - **Analog Feedback**: Reads voltage from the panel (A0) to detect light intensity.  
@@ -44,7 +43,7 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 
 ---
 
-## 🛠️ Hardware Components
+## Hardware Components
 
 | Component                  | Qty  | Notes                                    |
 |----------------------------|:----:|------------------------------------------|
@@ -61,11 +60,11 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 
 ---
 
-## 💻 Software & Firmware
+## Software & Firmware
 
 - **Arduino Sketch**  
   - `readVoltage()`: Reads and maps panel voltage (A0 → 0–5 V).  
-  - `trackAzimuth()` / `trackElevation()`: Local-scan routines to find the brightest “hotspot.”  
+  - `findMaxPosition()` / `trackLightLocally()`: Local-scan routines to find the brightest “hotspot.”  
   - Safety checks to prevent over-rotation beyond physical limits.
 
 - **Dependencies**  
@@ -74,7 +73,7 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 
 ---
 
-## 🏗️ CAD & 3D Prints
+## CAD & 3D Prints
 
 - **SolidWorks Models**  
   - `CAD/LowerBase.SLDPRT` – Electronics housing with wiring pass-through  
@@ -90,28 +89,7 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 
 ---
 
-## 📁 Repository Structure
-R2D3-Solar-Tracker/
-├── README.md
-├── CAD/
-│   ├── LowerBase.SLDPRT
-│   ├── UpperHemisphere.SLDPRT
-│   └── Assembly.SLDASM
-├── STL/
-│   ├── LowerBase.stl
-│   ├── UpperHemisphere.stl
-│   └── MountingArm.stl
-├── firmware/
-│   └── R2D3_Tracker.ino
-├── sketches/
-│   └── hand-drawn-concepts.pdf
-├── images/
-│   ├── photo-1.jpg
-│   └── photo-2.jpg
-└── docs/
-    └── FinalReport.pdf
-
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up and run your R2D3 solar tracker:
 
@@ -145,7 +123,7 @@ Follow these steps to set up and run your R2D3 solar tracker:
 
 ---
 
-## 📊 Usage
+## Usage
 
 - **Initial Scan:** On power-up, performs a limited sweep around last known position to find the brightest direction  
 - **Continuous Tracking:** Every 5 seconds (configurable in firmware), updates azimuth/elevation within a ±30° “hotspot” zone  
@@ -157,7 +135,7 @@ Modify these ranges in `trackAzimuth()` and `trackElevation()` to suit your hard
 
 ---
 
-## 📈 Results & Performance
+## Results & Performance
 
 - **Dual-Axis Operation:** Azimuth (±90°) and elevation (25–155°) confirmed  
 - **Response Time:** < 2 s to reorient within a 30° hotspot  
@@ -168,7 +146,7 @@ Full data and graphs in docs/FinalReport.pdf.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 1. **Higher-Torque Actuators**  
    Swap to geared or brushless servos for larger panels  
@@ -183,7 +161,7 @@ Full data and graphs in docs/FinalReport.pdf.
 
 ---
 
-## 📚 References
+## References
 
 - Arduino® UNO R3 Product Reference Manual  
 - Banerjee, R. (2015). *Solar tracking system*. IJSRP, 5(3).  
@@ -192,6 +170,6 @@ Full data and graphs in docs/FinalReport.pdf.
 
 ---
 
-## 📝 License
+## License
 
 This project is released under the **MIT License**. See LICENSE for details.
