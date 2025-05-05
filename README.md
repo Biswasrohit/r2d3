@@ -91,7 +91,7 @@ Follow these steps to set up and run your R2D3 solar tracker:
 
 1. **Clone the repository**  
     git clone https://github.com/Biswasrohit/r2d3.git                 
-    cd R2D3-Solar-Tracker
+    cd r2d3
 
 3. **3D-print the parts**  
     - Slice the files in STL/ with your preferred slicer  
