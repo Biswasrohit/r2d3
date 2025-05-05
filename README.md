@@ -73,17 +73,13 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 
 ---
 
-## CAD & 3D Prints
+## 3D Prints
 
 - **SolidWorks Models**  
-  - `CAD/LowerBase.SLDPRT` – Electronics housing with wiring pass-through  
-  - `CAD/UpperHemisphere.SLDPRT` – Rotating head to support the panel  
-  - `CAD/Assembly.SLDASM` – Full dual-axis assembly  
-
-- **3D-Print Files**  
-  - `STL/LowerBase.stl`  
-  - `STL/UpperHemisphere.stl`  
-  - `STL/MountingArm.stl`  
+  - `CAD/StorageCube.SLDPRT` – Electronics housing with wiring pass-through  
+  - `CAD/UpperSphere.SLDPRT` – Rotating head to support the panel  
+  - `CAD/Base.SLDPRT` – Base
+  - `CAD/TopLid.SLDPRT` - Top Lid
 
 > **Tip:** Print at 0.2 mm layer height with 20% infill for a balance of strength and speed.
 
