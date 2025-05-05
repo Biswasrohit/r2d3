@@ -90,30 +90,30 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 Follow these steps to set up and run your R2D3 solar tracker:
 
 1. **Clone the repository**  
-    git clone https://github.com/Biswasrohit/r2d3.git 
+    git clone https://github.com/Biswasrohit/r2d3.git                 
     cd R2D3-Solar-Tracker
 
-2. **3D-print the parts**  
+3. **3D-print the parts**  
     - Slice the files in STL/ with your preferred slicer  
     - Recommended settings: PLA, 0.2 mm layer height, 20 % infill, 60 °C bed, 200 °C nozzle
 
-3. **Assemble the hardware**  
+4. **Assemble the hardware**  
     - Secure the horizontal servo into LowerBase.stl  
     - Thread wiring through the base passthrough hole  
     - Attach the secondary cylindrical base and upper hemisphere (UpperHemisphere.stl) to the horizontal horn  
     - Mount the vertical servo and solar panel in the hemisphere using the popsicle-stick armature
 
-4. **Wire the electronics**  
+5. **Wire the electronics**  
     - Power servos from Arduino 5 V & GND; signal pins to D9 (horizontal) and D10 (vertical)  
     - Connect panel’s positive lead to A0 and negative lead to GND  
     - Tidy cables through built-in channels
 
-5. **Upload the firmware**  
+6. **Upload the firmware**  
     - Open firmware/R2D3_Tracker.ino in the Arduino IDE (v1.8+)  
     - Select “Arduino Uno” and the correct serial port  
     - Click “Upload”
 
-6. **Power and test**  
+7. **Power and test**  
     - Plug Arduino into USB-A (PC or power bank)  
     - Observe initial local scan, then place under a lamp or sunlight—panel should smoothly follow the brightest spot
 
