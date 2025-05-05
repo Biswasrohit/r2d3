@@ -90,7 +90,7 @@ Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form wit
 Follow these steps to set up and run your R2D3 solar tracker:
 
 1. **Clone the repository**  
-    git clone https://github.com/your-username/R2D3-Solar-Tracker.git  
+    git clone https://github.com/Biswasrohit/r2d3.git 
     cd R2D3-Solar-Tracker
 
 2. **3D-print the parts**  
