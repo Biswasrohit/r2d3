@@ -31,6 +31,8 @@ This project implements a compact, dual-axis solar tracker that:
 
 Inspired by the droid **R2D2**, our “R2D3” tracker combines playful form with practical function.
 
+![R2D3 Solar Tracker](./images/meetR2D3.jpg)
+
 ---
 
 ## Key Features
